@@ -16,5 +16,38 @@ namespace COMP123_M2020_FinalExam
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// this method will select first name and last name randomly from the list box 
+        /// </summary>
+        public void GenerateName()
+        {
+            Random selction = new Random();
+            int firstNamePostion = selction.Next(1, FirstNameListBox.Items.Count);
+            var firstNameSelection = FirstNameListBox.Items[firstNamePostion];
+            int lastNamePostion = selction.Next(1, listBox1.Items.Count);
+            var lastNameSelection = listBox1.Items[lastNamePostion];
+            textBox1.Text = firstNameSelection.ToString();
+            LastNameTextBox.Text = lastNameSelection.ToString();
+        }
+
+        private void GenerateNameForm_Load(object sender, EventArgs e)
+        {
+            GenerateName();
+        }
+
+        private void GenerateButton_Click(object sender, EventArgs e)
+        {
+            GenerateName();
+            Program.character.FirstName = textBox1.Text;
+            Program.character.LastName = LastNameTextBox.Text;
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
+            abilityGeneratorForm.Show();
+            this.Hide();
+        }
     }
 }

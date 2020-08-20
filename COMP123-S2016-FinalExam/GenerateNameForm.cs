@@ -48,6 +48,10 @@ namespace COMP123_M2020_FinalExam
             AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
             abilityGeneratorForm.Show();
             this.Hide();
+
+            //These 2 extra steps to set values of firstname and lastname prop. when next button clicked 
+            Program.character.FirstName = textBox1.Text;
+            Program.character.LastName = LastNameTextBox.Text;
         }
     }
 }

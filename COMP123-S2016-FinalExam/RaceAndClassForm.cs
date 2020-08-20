@@ -44,11 +44,17 @@ namespace COMP123_M2020_FinalExam
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            // race prop. will be assigned when next button clicked 
+            Program.character.Race = _selectedRace;
+
             FinalForm finalForm = new FinalForm();
             finalForm.previousForm = this;
 
+
             finalForm.Show();
             this.Hide();
+
+            
         }
     }
 }

@@ -39,6 +39,13 @@ namespace COMP123_M2020_FinalExam
             Application.Exit();
         }
 
+
+        /// <summary>
+        /// this event handler will trigger when the final form load, loading the form action will retrieve all the data
+        /// from the public class , then show it to the user 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FinalForm_Load(object sender, EventArgs e)
         {
             StrengthTextBox.Text = Program.character.Strength;

@@ -7,6 +7,8 @@ namespace COMP123_M2020_FinalExam
 {
     public class Character
     {
+
+        // PUBLIC PROPERTIES 
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Strength { get; set; }

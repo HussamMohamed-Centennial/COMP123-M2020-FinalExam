@@ -18,7 +18,10 @@ namespace COMP123_M2020_FinalExam
         }
 
         /// <summary>
-        /// splash timer tick event handler will show next form ,hide this form ,also will disable timer to prevent repeated action when the timer interval end.
+        /// splash timer tick event handler will
+        /// 1-show next form
+        /// 2-hide this form
+        /// 3- disable timer to prevent repeated action when the timer interval end.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
